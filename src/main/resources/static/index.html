@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bestill</title>
+</head>
+<body>
+<h1>Bestilling av kinobiletter</h1>
+<form id="form">
+    <label for="film">Velg film:</label>
+    <select name="film" id="film" required>
+        <option value="" selected disabled hidden>Velg film her</option>
+        <option value="the godfather">The Godfather</option>
+        <option value="the dark knight">The Dark Knight</option>
+        <option value="forrest gump">Forrest Gump</option>
+        <option value="fight club">Fight Club</option>
+        <option value="inception">Inception</option>
+        <option value="the matrix">The Matrix</option>
+        <option value="interstellar">Interstellar</option>
+        <option value="the green mile">The Green Mile</option>
+        <option value="terminator 2: judgment day">Terminator 2: Judgment Day</option>
+        <option value="gladiator">Gladiator</option>
+        <option value="pulp fiction">Pulp Fiction</option>
+        <option value="the shawshank redemption">The Shawshank Redemption</option>
+        <option value="inglourious basterds">Inglourious Basterds</option>
+        <option value="the usual suspects">The Usual Suspects</option>
+        <option value="city of god">City of God</option>
+        <option value="no country for old men">No Country for Old Men</option>
+        <option value="the prestige">The Prestige</option>
+        <option value="schindler's list">Schindler's List</option>
+        <option value="the sixth sense">The Sixth Sense</option>
+        <option value="american history x">American History X</option>
+        <option value="memento">Memento</option>
+        <option value="the pianist">The Pianist</option>
+        <option value="gone girl">Gone Girl</option>
+        <option value="the revenant">The Revenant</option>
+        <option value="shutter island">Shutter Island</option>
+        <option value="heat">Heat</option>
+        <option value="casino">Casino</option>
+        <option value="the dark knight rises">The Dark Knight Rises</option>
+        <option value="catch me if you can">Catch Me If You Can</option>
+        <option value="american beauty">American Beauty</option>
+        <option value="the bourne identity">The Bourne Identity</option>
+        <option value="the bourne ultimatum">The Bourne Ultimatum</option>
+        <option value="the bourne supremacy">The Bourne Supremacy</option>
+        <option value="the green book">The Green Book</option>
+        <option value="the wolf of wall street">The Wolf of Wall Street</option>
+        <option value="django unchained">Django Unchained</option>
+        <option value="reservoir dogs">Reservoir Dogs</option>
+        <option value="kill bill: vol. 1">Kill Bill: Vol. 1</option>
+        <option value="kill bill: vol. 2">Kill Bill: Vol. 2</option>
+        <option value="the hateful eight">The Hateful Eight</option>
+        <option value="dunkirk">Dunkirk</option>
+        <option value="1917">1917</option>
+        <option value="blade runner 2049">Blade Runner 2049</option>
+        <option value="the grand budapest hotel">The Grand Budapest Hotel</option>
+        <option value="parasite">Parasite</option>
+        <option value="joker">Joker</option>
+        <option value="once upon a time in hollywood">Once Upon a Time in Hollywood</option>
+        <option value="avengers: endgame">Avengers: Endgame</option>
+        <option value="black panther">Black Panther</option>
+        <option value="la la land">La La Land</option>
+        <option value="moonlight">Moonlight</option>
+        <option value="the shape of water">The Shape of Water</option>
+        <option value="birdman">Birdman</option>
+        <option value="whiplash">Whiplash</option>
+        <option value="mad max: fury road">Mad Max: Fury Road</option>
+        <option value="spotlight">Spotlight</option>
+        <option value="the martian">The Martian</option>
+        <option value="gravity">Gravity</option>
+        <option value="12 years a slave">12 Years a Slave</option>
+        <option value="the social network">The Social Network</option>
+        <option value="the king's speech">The King's Speech</option>
+        <option value="the hurt locker">The Hurt Locker</option>
+        <option value="slumdog millionaire">Slumdog Millionaire</option>
+        <option value="there will be blood">There Will Be Blood</option>
+        <option value="brokeback mountain">Brokeback Mountain</option>
+        <option value="million dollar baby">Million Dollar Baby</option>
+        <option value="the lord of the rings: the return of the king">The Lord of the Rings: The Return of the King</option>
+        <option value="chicago">Chicago</option>
+        <option value="a beautiful mind">A Beautiful Mind</option>
+        <option value="shakespeare in love">Shakespeare in Love</option>
+        <option value="titanic">Titanic</option>
+        <option value="the english patient">The English Patient</option>
+        <option value="braveheart">Braveheart</option>
+        <option value="unforgiven">Unforgiven</option>
+        <option value="dances with wolves">Dances with Wolves</option>
+        <option value="driving miss daisy">Driving Miss Daisy</option>
+        <option value="rain man">Rain Man</option>
+        <option value="the last emperor">The Last Emperor</option>
+        <option value="platoon">Platoon</option>
+        <option value="out of africa">Out of Africa</option>
+        <option value="amadeus">Amadeus</option>
+        <option value="terms of endearment">Terms of Endearment</option>
+        <option value="gandhi">Gandhi</option>
+    </select>
+    <br>
+    <label for="antall">Antall: </label>
+    <input type="number" name="antall" id="antall" min="1" required placeholder="Minimum 1">
+    <br>
+    <label for="fornavn">Fornavn: </label>
+    <input type="text" id="fornavn" pattern="[a-zæøåA-ZÆØÅ]{1,30}" required placeholder="Lengde 1 til 30, med norsk alphabet">
+    <br>
+    <label for="etternavn">Etternavn: </label>
+    <input type="text" id="etternavn" pattern="[a-zæøåA-ZÆØÅ]{1,30}" required placeholder="Lengde 1 til 30, med norsk alphabet">
+    <br>
+    <label for="telefonnr">TelefonNr: </label>
+    <input type="tel" id="telefonnr" pattern="[0-9]{8}" required placeholder="8 siffer privat person tlf nummer">
+    <br>
+    <label for="epost">Epost: </label>
+    <input type="email" id="epost" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}" placeholder="Eksempel@Eksempel" required>
+
+    <input type="submit" value="Kjøp Billett">
+</form>
+
+<h2>Alle billetter</h2>
+
+<table>
+    <tbody id="allebilletter">
+    <tr>
+        <th>Film</th>
+        <th>Antall</th>
+        <th>Fornavn</th>
+        <th>Etternavn</th>
+        <th>TelefonNr</th>
+        <th>Epost</th>
+    </tr>
+    </tbody>
+
+</table>
+<button type="button" onclick="ClearArray(); ClearTable();">Slett alle billettene</button>
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="code.js"></script>
+
+<style>
+    * {
+    width: 250px;
+    margin: 5px;
+    }
+    tr:nth-child(even) {
+        background-color: floralwhite;
+    }
+</style>
