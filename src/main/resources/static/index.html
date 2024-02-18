@@ -105,11 +105,11 @@
     <input type="text" id="etternavn" pattern="[a-zæøåA-ZÆØÅ]{1,30}" required placeholder="Lengde 1 til 30, med norsk alphabet">
     <br>
     <label for="telefonnr">TelefonNr: </label>
-    <input type="tel" id="telefonnr" pattern="[0-9]{8}" required placeholder="8 siffer privat person tlf nummer">
+    <input type="tel" id="telefonnr" pattern="[0-9]{8}" required placeholder="8 siffer privat tlf nummer">
     <br>
     <label for="epost">Epost: </label>
-    <input type="email" id="epost" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}" placeholder="Eksempel@Eksempel" required>
-
+    <input type="email" id="epost" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="Eksempel@Eksempel.no" required>
+    <br>
     <input type="submit" value="Kjøp Billett">
 </form>
 
@@ -134,13 +134,3 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="code.js"></script>
-
-<style>
-    * {
-    width: 250px;
-    margin: 5px;
-    }
-    tr:nth-child(even) {
-        background-color: floralwhite;
-    }
-</style>
